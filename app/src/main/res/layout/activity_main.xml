@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:gravity="center"
+        android:text="BALANCE"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="113dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="394dp"
+            android:layout_height="112dp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="191dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_TRY"
+                    android:layout_width="match_parent"
+                    android:layout_height="47dp"
+                    android:layout_weight="1"
+                    android:gravity="left|center"
+                    android:text=" ₺ : "
+                    android:textSize="24sp" />
+
+                <TextView
+                    android:id="@+id/tv_USD"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:layout_weight="1"
+                    android:gravity="left|center"
+                    android:text=" $ : "
+                    android:textSize="24sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_EUR"
+                    android:layout_width="192dp"
+                    android:layout_height="48dp"
+                    android:layout_weight="1"
+                    android:gravity="left|center"
+                    android:text=" € : "
+                    android:textSize="24sp" />
+
+                <TextView
+                    android:id="@+id/tv_GBP"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:layout_weight="1"
+                    android:gravity="left|center"
+                    android:text=" £ : "
+                    android:textSize="24sp" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/et_givenCount"
+        android:layout_width="match_parent"
+        android:layout_height="58dp"
+        android:ems="10"
+        android:gravity="center"
+        android:inputType="number"
+        android:text="0"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <RadioGroup
+        android:id="@+id/rg"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="65dp">
+
+
+        <RadioButton
+            android:id="@+id/rb_USD"
+            android:layout_width="wrap_content"
+            android:layout_height="78dp"
+            android:layout_weight="1"
+            android:text="USD"
+            android:textSize="18sp"
+            android:textStyle="italic" />
+
+        <RadioButton
+            android:id="@+id/rb_EUR"
+            android:layout_width="wrap_content"
+            android:layout_height="78dp"
+            android:layout_weight="1"
+            android:text="EUR"
+            android:textSize="18sp"
+            android:textStyle="italic" />
+
+        <RadioButton
+            android:id="@+id/rb_GBP"
+            android:layout_width="wrap_content"
+            android:layout_height="78dp"
+            android:layout_weight="1"
+            android:text="GBP"
+            android:textSize="18sp"
+            android:textStyle="italic" />
+
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/tv_equ1"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="left|center"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/tv_equ2"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="left|center"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/tv_equ3"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="left|center"
+        android:textSize="24sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="84dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/b_purchase"
+            android:layout_width="wrap_content"
+            android:layout_height="76dp"
+            android:layout_weight="1"
+            android:text="PURCHASE"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/b_exchange"
+            android:layout_width="wrap_content"
+            android:layout_height="76dp"
+            android:layout_weight="1"
+            android:text="EXHANGE"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+
+</LinearLayout>
